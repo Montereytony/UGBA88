@@ -16,4 +16,6 @@ RUN pip install --quiet \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 RUN pip install datascience
-
+ADD common.json   /home/jovyan/.jupyter/common.json
+ADD tree.json     /home/jovyan/.jupyter/tree.json
+ADD notebook.json /home/jovyan/.jupyter/notebook.json
