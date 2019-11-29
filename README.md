@@ -2,7 +2,7 @@
 # Spring 2020  Jupyter Notebook HaasBerkeley UGBA88
 #
 
-* [Started with this:](https://github.com/jupyter/docker-stacks/blob/master/tensorflow-notebook/Dockerfile)
+* [Started with this: https://github.com/jupyter/docker-stacks/blob/master/tensorflow-notebook/Dockerfile](https://github.com/jupyter/docker-stacks/blob/master/tensorflow-notebook/Dockerfile)
 
 Please visit the documentation site for help using and contributing to this image and others.
 * [Jupyter Docker Stacks on ReadTheDocs](http://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
