@@ -16,3 +16,13 @@ RUN pip install --quiet \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 RUN pip install datascience
+
+ADD custom.css /home/jovyan/.jupyter/custom.css
+ADD custom.css /home/jovyan/.jupyter/custom/custom.css
+RUN jupyter nbextensions_configurator enable
+RUN jupyter nbextension enable  --py widgetsnbextension --sys-prefix
+
+ADD common.json   /home/jovyan/.jupyter/common.json
+ADD tree.json     /home/jovyan/.jupyter/tree.json
+ADD notebook.json /home/jovyan/.jupyter/notebook.json
+USER jovyan
